@@ -98,6 +98,10 @@ Choosing the correct polynomial degree is crucial for achieving optimal model pe
 
 ---
 
+### Bias–Variance Trade-off
+The bias–variance trade-off explains why a machine learning model can fail either by being too simple or too complex. A model with **high bias** makes strong assumptions and cannot capture the true pattern in the data, leading to **underfitting** (for example, using Simple Linear Regression on a curved dataset). A model with **high variance** is too flexible and learns noise from the training data, leading to **overfitting** (for example, using a very high-degree polynomial that fits every data point). As model complexity increases, bias decreases but variance increases, so the goal is to find a balance where the model learns meaningful patterns while still generalizing well to unseen data.
+
+
 ## 🎯 Conclusion
 - Simple Linear Regression is limited to linear data
 - Polynomial Regression handles non-linear patterns effectively
