@@ -101,6 +101,16 @@ Choosing the correct polynomial degree is crucial for achieving optimal model pe
 ### Bias–Variance Trade-off
 The bias–variance trade-off explains why a machine learning model can fail either by being too simple or too complex. A model with **high bias** makes strong assumptions and cannot capture the true pattern in the data, leading to **underfitting** (for example, using Simple Linear Regression on a curved dataset). A model with **high variance** is too flexible and learns noise from the training data, leading to **overfitting** (for example, using a very high-degree polynomial that fits every data point). As model complexity increases, bias decreases but variance increases, so the goal is to find a balance where the model learns meaningful patterns while still generalizing well to unseen data.
 
+### Regularization, Bagging, and Boosting
+
+**Regularization** is a technique used to prevent overfitting by adding a penalty to the model for being too complex. It discourages very large weights and helps the model focus on important features. For example, **L1 (Lasso)** regularization can reduce some weights to zero, while **L2 (Ridge)** regularization keeps weights small but non-zero.
+
+**Bagging (Bootstrap Aggregating)** reduces variance by training multiple models on different random subsets of the data and then averaging their predictions. It helps stabilize models that are sensitive to data changes. A common example is **Random Forest**, which uses bagging with decision trees.
+
+**Boosting** improves model performance by training models sequentially, where each new model focuses on correcting the mistakes made by the previous ones. It reduces bias and builds a strong model from many weak learners. Popular examples include **AdaBoost**, **Gradient Boosting**, and **XGBoost**.
+
+Together, these techniques help improve model generalization and reduce overfitting in machine learning.
+
 
 ## 🎯 Conclusion
 - Simple Linear Regression is limited to linear data
